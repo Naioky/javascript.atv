@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+button {
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    height: 27px;
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  ::placeholder{
+    color: red;
+  }
+
+  :checked + label{
+    text-decoration: line-through;
+  }
